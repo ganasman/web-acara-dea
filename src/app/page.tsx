@@ -75,7 +75,7 @@ export default function Home({ searchParams }: PageProps) {
                 Acara Khitan
               </p>
               <h1 className="text-6xl md:text-8xl font-light leading-none name-glow" style={{ color: '#f2e0b8' }}>
-                Deandra
+                Ghaisan
               </h1>
             </div>
 
@@ -89,10 +89,10 @@ export default function Home({ searchParams }: PageProps) {
                 Sabtu, 03 April 2026
               </p>
               <p className="text-xs tracking-[4px] uppercase mt-2" style={{ color: 'rgba(196,154,60,0.55)' }}>
-                Pukul 10.00 – 14.00 WIB
+                Pukul 10.00 – 16.00 WIB
               </p>
               <p className="text-xs tracking-[2px] mt-2" style={{ color: 'rgba(242,224,184,0.30)' }}>
-                Kediaman Pak Roni · Jl. Giri Pakem No.31
+                Aula Rahmat Yasin Bilabong Jln. Pinus 2 Blok G1 No 24
               </p>
             </div>
 
@@ -152,20 +152,20 @@ export default function Home({ searchParams }: PageProps) {
               Sabtu, 03 April 2026
             </p>
             <p className="text-sm mb-6" style={{ color: 'rgba(242,224,184,0.45)' }}>
-              Pukul 10.00 – 14.00 WIB
+              Pukul 10.00 – 16.00 WIB
             </p>
             <div className="animated-divider my-6" />
             <p className="text-xl font-light mt-6" style={{ fontFamily: 'var(--font-cormorant)', color: '#e8d5a3' }}>
-              Kediaman Pak Roni
+              Aula Rahmat Yasin 
             </p>
             <p className="text-xs mt-2 tracking-widest" style={{ color: 'rgba(242,224,184,0.30)' }}>
-              Jl. Giri Pakem No.31
+              Bilabong Jln. Pinus 2 Blok G1 No 24
             </p>
           </div>
 
           <div className="text-center mt-12">
             <a
-              href="https://maps.app.goo.gl/3YtFvNrXShfXf2Ft9"
+              href="https://maps.app.goo.gl/26pRDP8s9Jq1jP7c8"
               target="_blank"
               rel="noopener noreferrer"
               className="maps-btn"
