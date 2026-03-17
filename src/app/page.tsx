@@ -1,14 +1,14 @@
 import GuestGreeting from './components/GuestGreeting'
 import Countdown from './components/Countdown'
 import Gallery from './components/Gallery'
-import './invitation.css'   // ← semua animasi & utility classes
+import './invitation.css'
 
 interface PageProps {
-  searchParams: { nama?: string }
+  searchParams: Promise<{ nama?: string }>
 }
 
-export default function Home({ searchParams }: PageProps) {
-  const nama = searchParams?.nama
+export default async function Home({ searchParams }: PageProps) {
+  const { nama } = await searchParams
   return (
     <main className="min-h-screen bg-[#0a0804] overflow-x-hidden">
 
@@ -156,7 +156,7 @@ export default function Home({ searchParams }: PageProps) {
             </p>
             <div className="animated-divider my-6" />
             <p className="text-xl font-light mt-6" style={{ fontFamily: 'var(--font-cormorant)', color: '#e8d5a3' }}>
-              Aula Rahmat Yasin 
+              Aula Rahmat Yasin
             </p>
             <p className="text-xs mt-2 tracking-widest" style={{ color: 'rgba(242,224,184,0.30)' }}>
               Bilabong Jln. Pinus 2 Blok G1 No 24
