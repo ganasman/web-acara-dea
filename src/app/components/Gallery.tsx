@@ -5,11 +5,11 @@ import Image from 'next/image'
 
 const PHOTOS = [
   { src: '/photos/ade-dea.jpeg',  alt: 'Foto 1' },
-  { src: '/photos/ade-dea2.jpeg', alt: 'Foto 2' },
-  { src: '/photos/ade-dea.jpeg',  alt: 'Foto 3' },
-  { src: '/photos/ade-dea2.jpeg', alt: 'Foto 4' },
-  { src: '/photos/ade-dea.jpeg',  alt: 'Foto 5' },
-  { src: '/photos/ade-dea2.jpeg', alt: 'Foto 6' },
+  { src: '/photos/foto1.jpeg', alt: 'Foto 2' },
+  { src: '/photos/foto2.jpeg',  alt: 'Foto 3' },
+  { src: '/photos/foto3.jpeg', alt: 'Foto 4' },
+  { src: '/photos/foto4.jpeg',  alt: 'Foto 5' },
+  { src: '/photos/foto6.jpeg', alt: 'Foto 6' },
 ]
 
 export default function Gallery() {

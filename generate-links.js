@@ -4,7 +4,7 @@
  */
 
 // ✏️ Ganti dengan domain kamu setelah deploy ke Vercel
-const BASE_URL = 'https://web-acara-dea.vercel.app/'
+const BASE_URL = 'https://acara-khitan-ghaisan.vercel.app/'
 
 const daftarTamu = [
   'Leni & Dani',

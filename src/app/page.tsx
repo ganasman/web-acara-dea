@@ -86,7 +86,7 @@ export default function Home({ searchParams }: PageProps) {
                 className="text-2xl font-light mb-1"
                 style={{ fontFamily: 'var(--font-cormorant)', color: '#e8d5a3', letterSpacing: '0.05em' }}
               >
-                Sabtu, 03 April 2026
+                Sabtu, 04 April 2026
               </p>
               <p className="text-xs tracking-[4px] uppercase mt-2" style={{ color: 'rgba(196,154,60,0.55)' }}>
                 Pukul 10.00 – 16.00 WIB
@@ -149,7 +149,7 @@ export default function Home({ searchParams }: PageProps) {
             <span className="corner corner-br" />
 
             <p className="text-3xl md:text-4xl font-light mb-3" style={{ fontFamily: 'var(--font-cormorant)', color: '#f2e0b8' }}>
-              Sabtu, 03 April 2026
+              Sabtu, 04 April 2026
             </p>
             <p className="text-sm mb-6" style={{ color: 'rgba(242,224,184,0.45)' }}>
               Pukul 10.00 – 16.00 WIB
