@@ -67,7 +67,7 @@ export default async function Home({ searchParams }: PageProps) {
             <div className="animate-fade-up" style={{ animationDelay: '0.6s', fontFamily: 'var(--font-cormorant)' }}>
               <p className="text-sm tracking-[6px] uppercase mb-1" style={{ color: 'rgba(196,154,60,0.55)' }}>Acara Khitan</p>
               <p className="text-sm tracking-[2px] mb-2" style={{ color: 'rgba(242,224,184,0.35)' }}>Ananda</p>
-              <h1 className="text-6xl md:text-8xl font-light leading-none name-glow" style={{ color: '#f2e0b8' }}>
+              <h1 className="text-5xl md:text-7xl font-light leading-none name-glow" style={{ color: '#f2e0b8' }}>
                 M. Ghaisan
               </h1>
               <p className="text-sm mt-5 tracking-widest" style={{ color: 'rgba(242,224,184,0.35)' }}>Putra dari</p>
