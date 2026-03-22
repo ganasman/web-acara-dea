@@ -154,6 +154,7 @@ export default async function Home({ searchParams }: PageProps) {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 scroll-reveal">
             <div className="section-badge mb-4">Gallery Foto</div>
+            <h2 className="section-title" style={{ fontFamily: 'var(--font-cormorant)' }}>Galeri Ghaisan</h2>
           </div>
           <div className="scroll-reveal reveal-delay-2">
             <Gallery />
