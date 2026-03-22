@@ -133,7 +133,7 @@
   text-shadow: 0 0 60px rgba(196,154,60,0.25), 0 0 120px rgba(196,154,60,0.10);
 }
 
-/* ── Fade-up animation ── */
+/* ── Fade-up animation (hero) ── */
 .animate-fade-up {
   opacity: 0;
   transform: translateY(18px);
@@ -216,6 +216,52 @@
   from { opacity: 0; transform: translateY(30px) scale(0.98); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
+
+/* ════════════════════════════════════════════════════
+   SCROLL REVEAL — tambahan baru
+   Tambahkan class "scroll-reveal" ke elemen/section
+   yang mau animasi saat di-scroll
+   ════════════════════════════════════════════════════ */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variasi arah: dari kiri */
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal-left.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Variasi arah: dari kanan */
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(48px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.scroll-reveal-right.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delay helpers untuk stagger */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
 
 /* ── Countdown ── */
 .countdown-unit {

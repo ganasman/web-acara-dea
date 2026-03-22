@@ -1,34 +1,17 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Undangan Acara Ghaisan",
-  description: "",
-};
+  title: 'Undangan Khitan M. Ghaisan',
+  description: 'Undangan Acara Khitan Ananda M. Ghaisan Putra dari Bapak Roni Efendi & Ibu Intan Novianti',
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="id" style={{ overflowX: 'hidden', scrollBehavior: 'smooth' }}>
+      <body style={{ overflowX: 'hidden', margin: 0, padding: 0 }}>
         {children}
       </body>
     </html>
-  );
+  )
 }
