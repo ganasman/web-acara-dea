@@ -1,7 +1,6 @@
 import GuestGreeting from './components/GuestGreeting'
 import Countdown from './components/Countdown'
 import Gallery from './components/Gallery'
-import MusicPlayer from './components/Musicplayer'
 import WishesSection from './components/WishesSection'
 import RekeningCard from './components/rekeningcard'
 import ScrollReveal from './components/ScrollReveal'
@@ -16,7 +15,6 @@ export default async function Home({ searchParams }: PageProps) {
   return (
     <main className="min-h-screen bg-[#0a0804] overflow-x-hidden">
 
-      <MusicPlayer />
       <ScrollReveal />
 
       {/* ─── ANIMATED BACKGROUND ─────────────────────────────── */}

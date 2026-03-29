@@ -1,10 +1,7 @@
-/**
- * Generate link undangan untuk semua tamu
- * Jalankan: node scripts/generate-links.js
- */
+const fs   = require('fs')
+const path = require('path')
 
-// ✏️ Ganti dengan domain kamu setelah deploy ke Vercel
-const BASE_URL = 'https://acara-khitan-ghaisan.vercel.app/'
+const BASE_URL = 'https://acara-khitan-ghaisan.vercel.app'
 
 const daftarTamu = [
   'Leni & Dani',
@@ -116,9 +113,35 @@ const daftarTamu = [
   'Raisya',
   'Zoreatty',
   'Ahdina',
+  // ── Tamu baru ──
+  'Ust Hafidz Muzakki',
+  'Ust Dedek Kurniawan',
+  'Ust Syamsul Muarif',
+  'Adit',
+  'Atha',
+  'Aldy',
+  'Randy',
+  'Bilal',
+  'Daru',
+  'Syakira',
+  'K.H Adrian Mafatihallah Kariem M.A & Istri',
+  'K.H Rahmat & Istri',
+  'K.H Andi & Istri',
+  'K.H Faisal Hadiq & Istri',
+  'K.H Nurwahyudi & Istri',
+  'Firmansyah & Istri',
+  'Lusiana',
+  'Bunda Indah',
+  'Siti Maisaroh',
+  'Hj. Nadiyah',
+  'Gupe',
+  'Indah & Suami',
+  'Indrayani & Suami',
+  'Salsa',
+  'Wasidi & Istri',
+  'Mamah Rendra',
 ]
 
-// ── Output terminal ───────────────────────────────────────────
 console.log('='.repeat(65))
 console.log(`  LINK UNDANGAN KHITAN Ghaisan — ${daftarTamu.length} Tamu`)
 console.log('='.repeat(65))
@@ -131,10 +154,6 @@ daftarTamu.forEach((nama, i) => {
   console.log(`     ${link}`)
   console.log()
 })
-
-// ── Simpan ke links.txt ───────────────────────────────────────
-const fs   = require('fs')
-const path = require('path')
 
 const lines = daftarTamu.map((nama, i) => {
   const link = `${BASE_URL}/?nama=${encodeURIComponent(nama)}`
@@ -157,6 +176,5 @@ console.log('='.repeat(65))
 console.log(`  Total: ${daftarTamu.length} undangan`)
 console.log('='.repeat(65))
 console.log()
-console.log('File tersimpan di: scripts/links.txt')
-console.log('Buka file itu lalu copy-paste link ke WhatsApp masing-masing tamu.')
+console.log('File tersimpan di: links.txt')
 console.log()
